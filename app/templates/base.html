@@ -15,11 +15,11 @@
             <div class="navbar-start">
                 {% if current_user.has_role("admin") %}
                 <a class="navbar-item" href="{{ url_for('patient.create_patient') }}">
-                    Crear Paciente
+                    Crear patient
                 </a>
                 {% endif %}
                 <a class="navbar-item" href="{{ url_for('patient.list_patients') }}">
-                    Lista de Pacientes
+                    Lista de patients
                 </a>
                 <a class="navbar-item" href="{{ url_for('user.logout') }}">
                     Cerrar Sesión

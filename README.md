@@ -27,14 +27,14 @@
 
 ### Contexto:
 
-Eres el **Back-End Developer** de la Caja Nacional de Salud, el directo General de la Caja te ha pedido realizar una demo de un sistema para gestionar la información de los pacientes.
+Eres el **Back-End Developer** de la Caja Nacional de Salud, el directo General de la Caja te ha pedido realizar una demo de un sistema para gestionar la información de los patients.
 
-Se debe almacenar en **Base de Datos** los siguientes datos de los **Pacientes**:
-- **id**: Identificador único de la paciente. De tipo **entero y autoincremental**.
-- **name**: Nombres del paciente. De tipo **cadena de texto**.
-- **lastname**: Apellidos del paciente. De tipo **cadena de texto**.
-- **ci**: Cédula de identidad del paciente. De tipo **cadena de texto**.
-- **birth_date**: Fecha de nacimiento del paciente. De tipo **cadena de texto**
+Se debe almacenar en **Base de Datos** los siguientes datos de los **patients**:
+- **id**: Identificador único de la patient. De tipo **entero y autoincremental**.
+- **name**: Nombres del patient. De tipo **cadena de texto**.
+- **lastname**: Apellidos del patient. De tipo **cadena de texto**.
+- **ci**: Cédula de identidad del patient. De tipo **cadena de texto**.
+- **birth_date**: Fecha de nacimiento del patient. De tipo **cadena de texto**
 
 Se debe almacenar en **Base de Datos** los siguientes datos de los **Usuarios**:
 - **id**: Identificador único del usuario. De tipo **entero y autoincremental**.
@@ -43,29 +43,29 @@ Se debe almacenar en **Base de Datos** los siguientes datos de los **Usuarios**:
 - **role**: Rol del usuario (admin, doctor). De tipo **cadena de texto**.
 
 Existe un usuario administrador (`admin`) puede realizar las siguientes acciones:
-- **Listar a los pacientes**: Listar todos las pacientes.
-- **Crear un paciente**: Crear un nuevo paciente.
-- **Actualizar un paciente**: Actualizar un paciente existente.
-- **Eliminar un paciente**: Eliminar un paciente existente. 
+- **Listar a los patients**: Listar todos las patients.
+- **Crear un patient**: Crear un nuevo patient.
+- **Actualizar un patient**: Actualizar un patient existente.
+- **Eliminar un patient**: Eliminar un patient existente. 
 
 Existe un usuario doctor (`doctor`) que puede realizar las siguientes acciones:
-- **Listar a los pacientes**: Listar todos las pacientes del equipo.
+- **Listar a los patients**: Listar todos las patients del equipo.
 
 Los usuarios deben autenticarse en la API para poder realizar las acciones permitidas. Se debe utilizar **Cookies** para mantener la sesión del usuario en la aplicación.
 
 ### Tareas:
 
-Construye una **Web App MVC** que permita realizar las operaciones **CRUD** sobre los pacientes y debes enlazarlas con las plantillas **HTML** construidas en **Jinja** que proporciono el equipo de Front-end. Puedes encontrar las plantillas en la carpeta [templates](app/templates/).
+Construye una **Web App MVC** que permita realizar las operaciones **CRUD** sobre los patients y debes enlazarlas con las plantillas **HTML** construidas en **Jinja** que proporciono el equipo de Front-end. Puedes encontrar las plantillas en la carpeta [templates](app/templates/).
  
 La aplicación debe contar con las siguientes rutas:
 - **/**: Ruta de inicio de la aplicación. Debe mostrar un formulario de inicio de sesión.
 - **/users**: Ruta para registrar un nuevo usuario. Debe mostrar un formulario para registrar un nuevo usuario.
 - **/login**: Ruta para autenticar a un usuario. Debe mostrar un formulario para autenticar a un usuario.
 - **/logout**: Ruta para cerrar la sesión de un usuario. Debe cerrar la sesión del usuario y redirigirlo a la página de inicio.
-- **/patients**: Ruta para listar a los pacientes. Debe mostrar una lista de pacientes. Es lo primero que se debe mostrar al autenticarse en la aplicación.
-- **/patients/create**: Ruta para crear un nuevo paciente. Debe mostrar un formulario para crear un nuevo paciente.
-- **/patients/{id}/update**: Ruta para actualizar un paciente existente. Debe mostrar un formulario para actualizar la información del paciente.
-- **/patients/{id}/delete**: Ruta para eliminar un paciente existente. Debe mostrar un mensaje de confirmación para eliminar al paciente.
+- **/patients**: Ruta para listar a los patients. Debe mostrar una lista de patients. Es lo primero que se debe mostrar al autenticarse en la aplicación.
+- **/patients/create**: Ruta para crear un nuevo patient. Debe mostrar un formulario para crear un nuevo patient.
+- **/patients/{id}/update**: Ruta para actualizar un patient existente. Debe mostrar un formulario para actualizar la información del patient.
+- **/patients/{id}/delete**: Ruta para eliminar un patient existente. Debe mostrar un mensaje de confirmación para eliminar al patient.
 
 ### Restricciones:
 1. Debes utilizar **Python** como lenguaje de programación.
@@ -85,7 +85,7 @@ La aplicación debe contar con las siguientes rutas:
     git commit -m "Entrega Final"
     git push origin main
     ```
-3. Una vez completado el paso anterior adjunta la **URL** de tu repositorio de **GitHub** en la paciente asignada en **Google Classroom**. 
+3. Una vez completado el paso anterior adjunta la **URL** de tu repositorio de **GitHub** en la patient asignada en **Google Classroom**. 
 
 
 ### Restricciones:
